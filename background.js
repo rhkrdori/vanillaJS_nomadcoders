@@ -1,7 +1,7 @@
 const images = [
-    "0.jpg",
-    "1.jpg",
-    "2.jpg"
+    "/vanillaJS_nomadcoders/0.jpg",
+    "/vanillaJS_nomadcoders/1.jpg",
+    "/vanillaJS_nomadcoders/2.jpg"
 ];
 
 const chosenImage = images[Math.floor(Math.random()*images.length)];
