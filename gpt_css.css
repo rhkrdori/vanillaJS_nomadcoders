@@ -1,4 +1,3 @@
-/*
 :root {
     --bg-gradient: linear-gradient(120deg, #89f7fe, #66a6ff);
     --white: #ffffff;
@@ -7,14 +6,13 @@
     --blue: #3b82f6;
     --border-radius: 16px;
 }
-*/
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    background: var(--bg-gradient);
+    /*background: var(--bg-gradient);*/
     margin: 0;
     padding: 40px 20px;
     color: var(--black);
