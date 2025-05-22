@@ -1,0 +1,156 @@
+/*
+:root {
+    --bg-gradient: linear-gradient(120deg, #89f7fe, #66a6ff);
+    --white: #ffffff;
+    --black: #1f2937;
+    --gray: #6b7280;
+    --blue: #3b82f6;
+    --border-radius: 16px;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    background: var(--bg-gradient);
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 시계 */
+#clock {
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--white);
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    margin: 20px 0;
+}
+
+/* 인사 */
+#greeting {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+/* 로그인 폼 */
+form#login-form {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* 할 일 입력 */
+#todo-form input {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    width: 280px;
+    margin-bottom: 16px;
+}
+
+/* 할 일 리스트 */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+#todo-list li {
+    background-color: var(--white);
+    padding: 12px 18px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+#todo-list li:hover {
+    transform: scale(1.02);
+}
+
+/* 명언 */
+#quote {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--white);
+}
+
+#quote span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#quote span:last-child {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 날씨 */
+#weather {
+    margin-top: 30px;
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+}
+
+#weather span {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* 숨김 처리 */
+.hidden {
+    display: none;
+}
+
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+    object-fit: cover;
+}
